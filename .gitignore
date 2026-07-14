@@ -5,3 +5,4 @@ wal/.config/wal/cache/
 *.log
 *.tmp
 .DS_Store
+waybar-ycal/.config/waybar-ycal/credentials.json
