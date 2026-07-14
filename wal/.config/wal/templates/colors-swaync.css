@@ -1,0 +1,12 @@
+:root {{
+    --cc-bg: {color0};
+    --noti-border-color: {color4};
+    --noti-bg: {color1};
+    --noti-bg-alpha: 0.9;
+    --noti-bg-hover: {color2};
+    --noti-bg-focus: {color1};
+    --noti-close-bg: {color1};
+    --noti-close-bg-hover: {color2};
+    --text-color: {color7};
+    --bg-selected: {color4};
+}}

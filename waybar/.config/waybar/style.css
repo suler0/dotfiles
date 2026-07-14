@@ -1,0 +1,90 @@
+@import "/home/bo7afes/.cache/wal/colors-waybar.css";
+
+* {
+    border: none;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    font-weight: 600;
+    min-height: 0;
+}
+
+window#waybar {
+    background: Transparent;
+}
+#custom-ycal,
+#custom-swaync,
+#custom-apps,
+#custom-browser,
+#workspaces,
+#pulseaudio,
+#network,
+#tray,
+#mpris,
+#custom-power,
+#clock {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: @foreground;
+    border-radius: 14px;
+    margin-top: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+#taskbar {
+    background-color: Transparent ;
+}
+#workspaces button {
+    padding: 0 8px;
+    margin: 2px;
+    border-radius: 10px;
+    color: @foreground;
+    background: transparent;
+}
+
+#workspaces button.active {
+    background: @wcolor4;
+    color: @background;
+    font-weight: bold;
+    padding: 0 12px;
+}
+
+#workspaces button:hover {
+    background: @wcolor2;
+    color: @background;
+}
+
+#custom-apps {
+    font-weight: bold;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#custom-browser {
+    font-size: 16px;
+}
+
+#custom-swaync {
+    font-size: 16px;
+}
+
+#custom-power {
+    font-size: 16px;
+}
+
+#clock {
+    font-weight: bold;
+}
+
+#taskbar button {
+    padding: 0 6px;
+    margin: 3px;
+    border-radius: 10px;
+    color: @foreground;
+}
+
+#taskbar button.active {
+    background: @wcolor4;
+    color: @background;
+}
+

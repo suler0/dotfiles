@@ -1,0 +1,283 @@
+@import "/home/bo7afes/.cache/wal/colors-swaync.css";
+ 
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+ 
+/* ── Windows & Root ─────────────────────────────── */
+notificationwindow,
+blankwindow,
+.blank-window,
+.floating-notifications {
+    background: transparent;
+}
+ 
+/* ── Control Center Panel ───────────────────────── */
+.control-center {
+    background: alpha(var(--cc-bg), 0.92);
+    border: 1px solid alpha(var(--noti-border-color), 0.5);
+    border-radius: 18px;
+    padding: 10px;
+    box-shadow:
+        0 2px 0 alpha(var(--color0), 0.4),
+        0 16px 48px alpha(var(--color0), 0.6);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+}
+ 
+.control-center .control-center-list {
+    background: transparent;
+}
+ 
+/* ── Title bar ──────────────────────────────────── */
+.widget-title {
+    margin: 4px 4px 10px 4px;
+}
+ 
+.widget-title > label {
+    font-size: 1.15rem;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    color: var(--color7);
+}
+ 
+.widget-title > button {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    border-radius: 8px;
+    padding: 4px 12px;
+    background: alpha(var(--color1), 0.18);
+    color: var(--color1);
+    border: 1px solid alpha(var(--color1), 0.35);
+    transition: all 0.2s ease;
+}
+ 
+.widget-title > button:hover {
+    background: alpha(var(--color1), 0.32);
+    border-color: alpha(var(--color1), 0.6);
+}
+ 
+/* ── Do Not Disturb widget ──────────────────────── */
+.widget-dnd {
+    margin: 0 4px 10px 4px;
+    padding: 8px 12px;
+    background: alpha(var(--noti-bg), 0.5);
+    border-radius: 12px;
+    border: 1px solid alpha(var(--noti-border-color), 0.3);
+}
+ 
+.widget-dnd label {
+    color: var(--color7);
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+ 
+.widget-dnd switch {
+    border-radius: 100px;
+    background: alpha(var(--color8), 0.3);
+    border: 1px solid alpha(var(--noti-border-color), 0.4);
+}
+ 
+.widget-dnd switch:checked {
+    background: var(--color2);
+}
+ 
+/* ── Notification Row ───────────────────────────── */
+.notification-row {
+    background: none;
+    outline: none;
+    margin: 3px 0;
+}
+ 
+.notification-row .notification-background {
+    padding: 3px 6px;
+}
+ 
+.notification-row .notification-background .notification {
+    background: alpha(var(--noti-bg), 0.82);
+    border: 1px solid alpha(var(--noti-border-color), 0.35);
+    border-radius: 14px;
+    padding: 4px;
+    box-shadow:
+        inset 0 1px 0 alpha(var(--color7), 0.06),
+        0 2px 8px alpha(var(--color0), 0.3);
+    transition: all 0.2s ease;
+}
+ 
+.notification-row .notification-background .notification:hover {
+    background: alpha(var(--noti-bg-hover), 0.9);
+    border-color: alpha(var(--color4), 0.45);
+    box-shadow:
+        inset 0 1px 0 alpha(var(--color7), 0.1),
+        0 4px 14px alpha(var(--color0), 0.45);
+}
+ 
+/* ── Notification Action Button (clickable area) ── */
+.notification-default-action {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    border-radius: 12px;
+    padding: 4px 8px;
+    transition: background 0.18s ease;
+}
+ 
+.notification-default-action:hover {
+    background: alpha(var(--noti-bg-hover), 0.6);
+}
+ 
+/* ── Notification Content ───────────────────────── */
+.notification-content {
+    background: transparent;
+    padding: 6px 4px;
+}
+ 
+/* App icon area */
+.app-icon-image {
+    border-radius: 8px;
+    min-width: 36px;
+    min-height: 36px;
+}
+ 
+/* ── Text Elements ──────────────────────────────── */
+.summary {
+    font-weight: bold;
+    font-size: 13.5px;
+    color: var(--color7);
+    letter-spacing: 0.01em;
+}
+ 
+.body {
+    font-size: 12.5px;
+    color: var(--color7);
+    opacity: 0.75;
+    line-height: 1.4;
+}
+ 
+.time {
+    font-size: 11px;
+    color: var(--color4);
+    opacity: 0.7;
+    letter-spacing: 0.02em;
+}
+ 
+/* ── Close Button ───────────────────────────────── */
+.close-button {
+    background: alpha(var(--noti-close-bg), 0.7);
+    color: var(--color7);
+    border: 1px solid alpha(var(--noti-border-color), 0.25);
+    border-radius: 100%;
+    min-width: 22px;
+    min-height: 22px;
+    margin: 6px;
+    padding: 0;
+    transition: all 0.18s ease;
+}
+ 
+.close-button:hover {
+    background: var(--color1);
+    border-color: alpha(var(--color1), 0.6);
+    color: var(--color0);
+}
+ 
+/* ── Floating Notifications (popups) ────────────── */
+.floating-notifications .notification-row .notification-background .notification {
+    background: alpha(var(--noti-bg), 0.88);
+    border: 1px solid alpha(var(--color4), 0.3);
+    border-radius: 14px;
+    box-shadow:
+        0 0 0 1px alpha(var(--color0), 0.15),
+        0 8px 28px alpha(var(--color0), 0.55);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+ 
+/* ── Media Player ───────────────────────────────── */
+.widget-mpris {
+    background: alpha(var(--color0), 0.5);
+    border-radius: 14px;
+    border: 1px solid alpha(var(--noti-border-color), 0.3);
+    padding: 4px;
+    margin: 4px;
+}
+ 
+.widget-mpris-player {
+    border-radius: 12px;
+    padding: 4px;
+}
+ 
+.widget-mpris .widget-mpris-album-art {
+    border-radius: 10px;
+    min-width: 56px;
+    min-height: 56px;
+}
+ 
+.widget-mpris .widget-mpris-title {
+    font-weight: bold;
+    font-size: 13px;
+    color: var(--color7);
+    letter-spacing: 0.01em;
+}
+ 
+.widget-mpris .widget-mpris-subtitle {
+    font-size: 11.5px;
+    color: var(--color4);
+    opacity: 0.85;
+}
+ 
+/* Player buttons */
+.widget-mpris button {
+    background: transparent;
+    border: none;
+    color: var(--color7);
+    border-radius: 100%;
+    min-width: 30px;
+    min-height: 30px;
+    padding: 4px;
+    transition: all 0.18s ease;
+}
+ 
+.widget-mpris button:hover {
+    background: alpha(var(--color4), 0.2);
+    color: var(--color4);
+}
+ 
+/* ── Notification action buttons (inline) ───────── */
+.notification-action-button {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 12px;
+    background: alpha(var(--color4), 0.12);
+    color: var(--color4);
+    border: 1px solid alpha(var(--color4), 0.28);
+    border-radius: 8px;
+    padding: 4px 10px;
+    margin: 2px;
+    transition: all 0.18s ease;
+}
+ 
+.notification-action-button:hover {
+    background: alpha(var(--color4), 0.25);
+    border-color: alpha(var(--color4), 0.5);
+}
+ 
+/* ── Urgency coloring (low / normal / critical) ── */
+.notification.low {
+    border-left: 3px solid alpha(var(--color2), 0.6);
+}
+ 
+.notification.normal {
+    border-left: 3px solid alpha(var(--color4), 0.6);
+}
+ 
+.notification.critical {
+    border-left: 3px solid var(--color1);
+    background: alpha(var(--color1), 0.08) !important;
+}
+ 
+.notification.critical .summary {
+    color: var(--color1);
+}
+ 

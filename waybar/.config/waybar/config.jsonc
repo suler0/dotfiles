@@ -1,0 +1,113 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 36,
+    "margin-top": 0,
+    "margin-left": 6,
+    "margin-right": 6,
+    "modules-left": [
+        "custom/apps",
+        "tray",
+        "hyprland/workspaces", 
+    ],
+    "modules-center": [
+        "wlr/taskbar",
+        "custom/ycal",
+    ],
+    "modules-right": [
+        "network",
+        "mpris",
+        "pulseaudio",
+        "custom/swaync",
+        "custom/power",
+    ],
+    "custom/swaync": {
+        "format": "\udb80\udc9a",
+        "on-click": "swaync-client -t",
+        "tooltip": false
+    },
+    "custom/apps": {
+        "format": " Apps",
+        "on-click": "rofi -show drun -show-icons",
+        "tooltip": false
+    },
+    "custom/browser": {
+        "format": "\udb80\ude39",
+        "on-click": "brave",
+        "tooltip": false
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 16,
+        "spacing": 6,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-right": "close"
+    },
+    "hyprland/workspaces": {
+    "format": "{name}",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "on-click": "hyprctl dispatch workspace",
+    "persistent_workspaces": {
+        "*": 5
+    },
+    "active-only": false,
+    "sort-by-number": true
+},
+    "mpris": {
+        "format": "{player_icon}",
+        "format-paused": "{player_icon}",
+        "player-icons": {
+            "default": "\udb80\udf86",
+            "brave": "\udb80\udf86"
+        },
+        "tooltip": true,
+        "tooltip-format": "{player_icon} {title}\n{artist}\n{status}",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "~/.config/waybar/scripts/seek_forward.sh",
+        "on-scroll-down": "~/.config/waybar/scripts/seek_back.sh"
+    },
+   // "clock": {
+     //   "format": "{:%H:%M}",
+       // "format-alt": "{:%A, %B %d %Y}",
+        //"tooltip-format": "<big>{:%Y %B %d}</big>\n<tt>{calendar}</tt>"
+    //},
+    "pulseaudio": {
+        "format": "{icon}|{volume}%",
+        "format-muted": "\udb81\udd81",
+        "format-icons": {
+            "default": [
+                "\udb81\udd7f",
+                "\udb81\udd80",
+                "\udb81\udd7e"
+            ]
+        },
+        "scroll-step": 5,
+        "on-click": "pavucontrol",
+        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "tooltip": false
+    },
+    "custom/power": {
+        "format": "\u23fb",
+        "on-click": "wlogout",
+        "tooltip": false
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 8
+    },
+    "network": {
+        "format-wifi": "\udb81\udda9 {signalStrength}%",
+        "format-disconnected": "\udb81\uddaa no net",
+        "interval": 5,
+        "tooltip": false,
+        "on-click-right": "kitty nmtui"
+    },
+    "custom/ycal": {
+       "exec": "/home/bo7afes/.config/waybar-ycal/bar.py",
+       "on-click": "/home/bo7afes/.config/waybar-ycal/toggle.sh",
+       "interval": 60,
+       "return-type": "json"
+     },
+}

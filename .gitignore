@@ -1,0 +1,7 @@
+# pywal cache
+wal/.config/wal/cache/
+
+# common junk
+*.log
+*.tmp
+.DS_Store

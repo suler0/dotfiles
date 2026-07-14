@@ -1,0 +1,73 @@
+* {
+    background-color: transparent;
+    text-color:       #c0caf5;
+    font:             "JetBrainsMono Nerd Font 12";
+}
+
+window {
+    background-color: #1a1b26;
+    border:           1px solid #7aa2f7;
+    border-radius:    12px;
+    width:            280px;
+    location:         north;
+    anchor:           north;
+    x-offset:         0;
+    y-offset:         42px;
+    padding:          8px;
+}
+
+mainbox {
+    background-color: transparent;
+    spacing:          4px;
+    children:         [ inputbar, listview ];
+}
+
+inputbar {
+    background-color: #24263a;
+    border-radius:    8px;
+    padding:          8px 12px;
+    margin:           0px 0px 4px 0px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    background-color: transparent;
+    text-color:       #7aa2f7;
+    padding:          0px 6px 0px 0px;
+}
+
+entry {
+    background-color: transparent;
+    text-color:       #c0caf5;
+    placeholder:      "Search...";
+    placeholder-color: #565f89;
+}
+
+listview {
+    background-color: transparent;
+    lines:            8;
+    scrollbar:        false;
+    spacing:          2px;
+}
+
+element {
+    background-color: transparent;
+    border-radius:    8px;
+    padding:          8px 12px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       #c0caf5;
+    vertical-align:   0.5;
+}
+
+element selected {
+    background-color: #24263a;
+    border:           1px solid #7aa2f7;
+    border-radius:    8px;
+}
+
+element selected > element-text {
+    text-color: #7aa2f7;
+}

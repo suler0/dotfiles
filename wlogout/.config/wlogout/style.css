@@ -1,0 +1,53 @@
+@import "/home/bo7afes/.cache/wal/colors-wlogout.css";
+
+* {
+    background: transparent;
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+window {
+    background-color: alpha(@background, 0.85);
+}
+
+button {
+    background-color: alpha(@background, 0.95);
+    color: @foreground;
+    border: 1px solid alpha(@foreground, 0.1);
+    border-radius: 16px;
+    margin: 10px;
+    min-width: 80px;
+    min-height: 100px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.15s ease;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: 36px;
+    padding: 70px 8px 8px 8px;
+}
+
+button:hover {
+    background-color: alpha(@wcolor4, 0.3);
+    color: @wcolor4;
+    border: 1px solid alpha(@wcolor4, 0.8);
+    box-shadow: 0 0 12px alpha(@wcolor4, 0.5);
+}
+
+#lock {
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"));
+}
+#logout {
+    background-image: image(url("/usr/share/wlogout/icons/logout.png"));
+}
+#suspend {
+    background-image: image(url("/usr/share/wlogout/icons/suspend.png"));
+}
+#hibernate {
+    background-image: image(url("/usr/share/wlogout/icons/hibernate.png"));
+}
+#shutdown {
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"));
+}
+#reboot {
+    background-image: image(url("/usr/share/wlogout/icons/reboot.png"));
+}
