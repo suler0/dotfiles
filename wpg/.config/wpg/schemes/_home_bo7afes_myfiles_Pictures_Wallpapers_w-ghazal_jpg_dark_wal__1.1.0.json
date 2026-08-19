@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/w-ghazal.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#10100f",
+        "foreground": "#dededd",
+        "cursor": "#dededd"
+    },
+    "colors": {
+        "color0": "#10100f",
+        "color1": "#6E6E6D",
+        "color2": "#81817F",
+        "color3": "#8F8F8D",
+        "color4": "#A1A19F",
+        "color5": "#ADADAC",
+        "color6": "#C0C0BE",
+        "color7": "#dededd",
+        "color8": "#9b9b9a",
+        "color9": "#6E6E6D",
+        "color10": "#81817F",
+        "color11": "#8F8F8D",
+        "color12": "#A1A19F",
+        "color13": "#ADADAC",
+        "color14": "#C0C0BE",
+        "color15": "#dededd"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/sunset.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0A1932",
+        "foreground": "#f5c8ab",
+        "cursor": "#f5c8ab"
+    },
+    "colors": {
+        "color0": "#0A1932",
+        "color1": "#B35E3B",
+        "color2": "#FC6A28",
+        "color3": "#A14D63",
+        "color4": "#E05755",
+        "color5": "#FD833B",
+        "color6": "#FD9250",
+        "color7": "#f5c8ab",
+        "color8": "#ab8c77",
+        "color9": "#B35E3B",
+        "color10": "#FC6A28",
+        "color11": "#A14D63",
+        "color12": "#E05755",
+        "color13": "#FD833B",
+        "color14": "#FD9250",
+        "color15": "#f5c8ab"
+    }
+}

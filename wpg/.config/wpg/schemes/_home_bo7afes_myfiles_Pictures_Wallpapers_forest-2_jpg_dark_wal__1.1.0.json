@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/forest-2.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#090C14",
+        "foreground": "#e3c8a8",
+        "cursor": "#e3c8a8"
+    },
+    "colors": {
+        "color0": "#090C14",
+        "color1": "#67554A",
+        "color2": "#926037",
+        "color3": "#AE6035",
+        "color4": "#97704B",
+        "color5": "#B38957",
+        "color6": "#DDAA5F",
+        "color7": "#e3c8a8",
+        "color8": "#9e8c75",
+        "color9": "#67554A",
+        "color10": "#926037",
+        "color11": "#AE6035",
+        "color12": "#97704B",
+        "color13": "#B38957",
+        "color14": "#DDAA5F",
+        "color15": "#e3c8a8"
+    }
+}

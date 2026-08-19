@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/wp12866029-digital-art-mountain-desktop-1920x1080-wallpapers.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0e191c",
+        "foreground": "#deebc1",
+        "cursor": "#deebc1"
+    },
+    "colors": {
+        "color0": "#0e191c",
+        "color1": "#55976D",
+        "color2": "#5B9D72",
+        "color3": "#62A579",
+        "color4": "#8EB87B",
+        "color5": "#7BB38B",
+        "color6": "#A2CA8A",
+        "color7": "#deebc1",
+        "color8": "#9ba487",
+        "color9": "#55976D",
+        "color10": "#5B9D72",
+        "color11": "#62A579",
+        "color12": "#8EB87B",
+        "color13": "#7BB38B",
+        "color14": "#A2CA8A",
+        "color15": "#deebc1"
+    }
+}

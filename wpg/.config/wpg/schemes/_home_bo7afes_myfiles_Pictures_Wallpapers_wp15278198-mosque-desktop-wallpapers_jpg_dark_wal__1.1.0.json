@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/wp15278198-mosque-desktop-wallpapers.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0B1318",
+        "foreground": "#99d7e1",
+        "cursor": "#99d7e1"
+    },
+    "colors": {
+        "color0": "#0B1318",
+        "color1": "#245A6B",
+        "color2": "#5B5953",
+        "color3": "#A55E35",
+        "color4": "#1D748C",
+        "color5": "#5B7C83",
+        "color6": "#2792AB",
+        "color7": "#99d7e1",
+        "color8": "#6b969d",
+        "color9": "#245A6B",
+        "color10": "#5B5953",
+        "color11": "#A55E35",
+        "color12": "#1D748C",
+        "color13": "#5B7C83",
+        "color14": "#2792AB",
+        "color15": "#99d7e1"
+    }
+}

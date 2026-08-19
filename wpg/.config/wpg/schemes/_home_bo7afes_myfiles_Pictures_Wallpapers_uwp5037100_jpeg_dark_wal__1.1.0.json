@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/uwp5037100.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0504",
+        "foreground": "#96e2db",
+        "cursor": "#96e2db"
+    },
+    "colors": {
+        "color0": "#0d0504",
+        "color1": "#565D50",
+        "color2": "#982A26",
+        "color3": "#CD5923",
+        "color4": "#238A76",
+        "color5": "#EEA126",
+        "color6": "#13A796",
+        "color7": "#96e2db",
+        "color8": "#699e99",
+        "color9": "#565D50",
+        "color10": "#982A26",
+        "color11": "#CD5923",
+        "color12": "#238A76",
+        "color13": "#EEA126",
+        "color14": "#13A796",
+        "color15": "#96e2db"
+    }
+}

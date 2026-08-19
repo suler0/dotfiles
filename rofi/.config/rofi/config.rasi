@@ -181,4 +181,4 @@ configuration {
 }
 @import "/home/bo7afes/.cache/wal/colors-rofi.rasi"
 @import "/home/bo7afes/.cache/wal/colors-rofi.rasi"
-@theme "launchers/type-1/style-10"
+@theme "launchers/type-2/style-2"

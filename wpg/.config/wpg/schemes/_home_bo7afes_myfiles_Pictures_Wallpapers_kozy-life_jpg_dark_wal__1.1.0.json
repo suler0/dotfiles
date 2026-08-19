@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/kozy-life.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0305",
+        "foreground": "#ccc5cf",
+        "cursor": "#ccc5cf"
+    },
+    "colors": {
+        "color0": "#0c0305",
+        "color1": "#235EA1",
+        "color2": "#5872A9",
+        "color3": "#3271C4",
+        "color4": "#B47789",
+        "color5": "#7287BA",
+        "color6": "#558FCE",
+        "color7": "#ccc5cf",
+        "color8": "#8e8990",
+        "color9": "#235EA1",
+        "color10": "#5872A9",
+        "color11": "#3271C4",
+        "color12": "#B47789",
+        "color13": "#7287BA",
+        "color14": "#558FCE",
+        "color15": "#ccc5cf"
+    }
+}

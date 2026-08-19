@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/2zwasazzdexg1.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0a0a",
+        "foreground": "#d9d4d3",
+        "cursor": "#d9d4d3"
+    },
+    "colors": {
+        "color0": "#0a0a0a",
+        "color1": "#A64833",
+        "color2": "#B45A46",
+        "color3": "#E7694F",
+        "color4": "#F98963",
+        "color5": "#7F8080",
+        "color6": "#A1A2A2",
+        "color7": "#d9d4d3",
+        "color8": "#979493",
+        "color9": "#A64833",
+        "color10": "#B45A46",
+        "color11": "#E7694F",
+        "color12": "#F98963",
+        "color13": "#7F8080",
+        "color14": "#A1A2A2",
+        "color15": "#d9d4d3"
+    }
+}

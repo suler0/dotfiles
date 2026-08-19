@@ -1,0 +1,6 @@
+# Append this table to an existing Matugen config containing [config].
+# For a new config, add an empty [config] table before this block.
+# Replace ~/.config or ~/.cache here if you use custom XDG directories.
+[templates.mycal]
+input_path = "~/.config/mycal/matugen-template.toml"
+output_path = "~/.cache/mycal/matugen.toml"

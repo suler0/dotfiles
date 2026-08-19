@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/digital-city.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#0F1031",
+        "foreground": "#98c8cd",
+        "cursor": "#98c8cd"
+    },
+    "colors": {
+        "color0": "#0F1031",
+        "color1": "#F9964D",
+        "color2": "#5F3090",
+        "color3": "#2A628C",
+        "color4": "#3D44A1",
+        "color5": "#595794",
+        "color6": "#A142AA",
+        "color7": "#98c8cd",
+        "color8": "#6a8c8f",
+        "color9": "#F9964D",
+        "color10": "#5F3090",
+        "color11": "#2A628C",
+        "color12": "#3D44A1",
+        "color13": "#595794",
+        "color14": "#A142AA",
+        "color15": "#98c8cd"
+    }
+}

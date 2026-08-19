@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/purplr-mountins.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#040817",
+        "foreground": "#d69ea7",
+        "cursor": "#d69ea7"
+    },
+    "colors": {
+        "color0": "#040817",
+        "color1": "#603E60",
+        "color2": "#73415E",
+        "color3": "#7C4360",
+        "color4": "#8E455E",
+        "color5": "#A1495F",
+        "color6": "#B14C60",
+        "color7": "#d69ea7",
+        "color8": "#956e74",
+        "color9": "#603E60",
+        "color10": "#73415E",
+        "color11": "#7C4360",
+        "color12": "#8E455E",
+        "color13": "#A1495F",
+        "color14": "#B14C60",
+        "color15": "#d69ea7"
+    }
+}

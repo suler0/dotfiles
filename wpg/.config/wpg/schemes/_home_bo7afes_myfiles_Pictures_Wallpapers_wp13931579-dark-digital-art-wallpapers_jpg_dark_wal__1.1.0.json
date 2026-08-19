@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/wp13931579-dark-digital-art-wallpapers.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0F0D16",
+        "foreground": "#7b94d3",
+        "cursor": "#7b94d3"
+    },
+    "colors": {
+        "color0": "#0F0D16",
+        "color1": "#0C245C",
+        "color2": "#532C4E",
+        "color3": "#A45303",
+        "color4": "#A74519",
+        "color5": "#EA9E02",
+        "color6": "#F6C602",
+        "color7": "#7b94d3",
+        "color8": "#566793",
+        "color9": "#0C245C",
+        "color10": "#532C4E",
+        "color11": "#A45303",
+        "color12": "#A74519",
+        "color13": "#EA9E02",
+        "color14": "#F6C602",
+        "color15": "#7b94d3"
+    }
+}

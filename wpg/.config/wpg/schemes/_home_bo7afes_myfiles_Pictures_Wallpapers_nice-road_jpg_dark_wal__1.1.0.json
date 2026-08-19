@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/nice-road.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#141211",
+        "foreground": "#e2e5e9",
+        "cursor": "#e2e5e9"
+    },
+    "colors": {
+        "color0": "#141211",
+        "color1": "#C97636",
+        "color2": "#9C6D52",
+        "color3": "#DD9E5A",
+        "color4": "#D7A04A",
+        "color5": "#7C7388",
+        "color6": "#D1B8A2",
+        "color7": "#e2e5e9",
+        "color8": "#9ea0a3",
+        "color9": "#C97636",
+        "color10": "#9C6D52",
+        "color11": "#DD9E5A",
+        "color12": "#D7A04A",
+        "color13": "#7C7388",
+        "color14": "#D1B8A2",
+        "color15": "#e2e5e9"
+    }
+}

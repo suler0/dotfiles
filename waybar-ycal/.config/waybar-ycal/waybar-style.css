@@ -1,0 +1,11 @@
+/* Optional neutral Waybar styling for custom/ycal. */
+#custom-ycal {
+  padding: 0 12px;
+  margin: 4px 2px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+#custom-ycal.error {
+  color: #ff6b6b;
+}

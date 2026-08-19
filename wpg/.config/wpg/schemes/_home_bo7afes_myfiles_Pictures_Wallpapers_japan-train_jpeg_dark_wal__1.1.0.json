@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/japan-train.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#151710",
+        "foreground": "#a6cae1",
+        "cursor": "#a6cae1"
+    },
+    "colors": {
+        "color0": "#151710",
+        "color1": "#B3973E",
+        "color2": "#1F6DAC",
+        "color3": "#3A78A9",
+        "color4": "#638BAB",
+        "color5": "#258DCF",
+        "color6": "#5BA7D2",
+        "color7": "#a6cae1",
+        "color8": "#748d9d",
+        "color9": "#B3973E",
+        "color10": "#1F6DAC",
+        "color11": "#3A78A9",
+        "color12": "#638BAB",
+        "color13": "#258DCF",
+        "color14": "#5BA7D2",
+        "color15": "#a6cae1"
+    }
+}

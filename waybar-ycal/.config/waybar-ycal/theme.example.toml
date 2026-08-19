@@ -1,0 +1,21 @@
+# Copy this file to ~/.config/mycal/theme.toml.
+# Sources: auto, matugen, omarchy, pywal, manual, file.
+# auto priority: Matugen -> Omarchy -> pywal -> built-in defaults.
+source = "auto"
+
+# For any TOML file containing the supported colors:
+# source = "file"
+# path = "~/.config/my-theme/colors.toml"
+
+# Values here override the selected source. Uncomment any combination.
+[colors]
+# foreground = "#eee0d5"
+# background = "#18120c"
+# accent = "#f9ba72"
+# accent2 = "#e0c1a3"
+# error = "#ffb4ab"
+
+[appearance]
+opacity = 0.92
+popover_opacity = 0.98
+radius = 12

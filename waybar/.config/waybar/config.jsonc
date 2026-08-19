@@ -6,25 +6,37 @@
     "margin-left": 6,
     "margin-right": 6,
     "modules-left": [
-        "custom/apps",
+        "custom/wvkbd",  
         "tray",
         "hyprland/workspaces", 
+        "hyprland/language",
     ],
     "modules-center": [
-        "wlr/taskbar",
+        //"wlr/taskbar",
         "custom/ycal",
+        "custom/prayer-times",
     ],
     "modules-right": [
+        "custom/mic",
         "network",
-        "mpris",
         "pulseaudio",
         "custom/swaync",
         "custom/power",
     ],
+    "custom/mic": {
+        "exec": "~/.config/waybar/scripts/mic.sh",
+        "return-type": "json",
+        "interval": 1,
+        "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+        "tooltip": true
+    },
+
     "custom/swaync": {
-        "format": "\udb80\udc9a",
+        "exec": "~/.config/waybar/scripts/swaync-status.sh",
+        "return-type": "json",
+        "interval": 2,
         "on-click": "swaync-client -t",
-        "tooltip": false
+        "tooltip": true
     },
     "custom/apps": {
         "format": " Apps",
@@ -45,18 +57,47 @@
         "on-click-right": "close"
     },
     "hyprland/workspaces": {
-    "format": "{name}",
-    "on-scroll-up": "hyprctl dispatch workspace e+1",
-    "on-scroll-down": "hyprctl dispatch workspace e-1",
-    "on-click": "hyprctl dispatch workspace",
+    "format": "{icon}{windows}",
+    "format-icons": {
+        "empty": "",
+        "default": ""
+    },
+    "window-rewrite-default": "\uf2d0",
+    "window-rewrite": {
+        "class<[Aa]lacritty> title<[Nn]vim>": "􀀌",
+        "class<[Kk]itty>": "\uf120",
+        "class<[Aa]lacritty>": "􀀀",
+        "class<[Ff]irefox>": "\uf269",
+        "class<[Hh]elium>": "􀀂",
+        "class<[Dd]iscord>": "􀀁",
+        "class<[Cc]ode>": "\uf121",
+        "class<brave-browser>": "􀀄",
+        "class<obs>": "􀀇",
+        "class<gimp>": "􀀊",
+        "class<Heroic>": "􀀆",
+        "class<obsidian>": "􀀈",
+        "class<TelegramDesktop>": "􀀃",
+        "class<Thunar>": "􀀍",
+        "class<mpv>": "􀀎"
+    },
+    "on-scroll-up": "hyprctl eval 'hl.dispatch(hl.dsp.focus({ workspace = \"e+1\" }))'",
+    "on-scroll-down": "hyprctl eval 'hl.dispatch(hl.dsp.focus({ workspace = \"e-1\" }))'",
     "persistent_workspaces": {
         "*": 5
     },
     "active-only": false,
     "sort-by-number": true
 },
+    "hyprland/language": {
+        "format": "{short}",
+        "format-en": "EN",
+        "format-ar": "عر",
+        "format-ara": "عر",
+        "format-us": "EN"
+    },
     "mpris": {
         "format": "{player_icon}",
+        "format-stopped": "",
         "format-paused": "{player_icon}",
         "player-icons": {
             "default": "\udb80\udf86",
@@ -88,6 +129,11 @@
         "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "tooltip": false
     },
+    "custom/wvkbd": {
+        "format": "\udb80\udd0c",
+        "on-click": "pkill wvkbd-mobintl || wvkbd-mobintl -L 220 --non-exclusive --alpha 230",
+        "tooltip": false
+    },
     "custom/power": {
         "format": "\u23fb",
         "on-click": "wlogout",
@@ -102,12 +148,21 @@
         "format-disconnected": "\udb81\uddaa no net",
         "interval": 5,
         "tooltip": false,
-        "on-click-right": "kitty nmtui"
+        "on-click": "networkmanager_dmenu -theme-str 'window {location: northeast; anchor: northeast; x-offset: -10px; y-offset: 40px;}'",
+        "on-click-right": "nm-connection-editor"
     },
     "custom/ycal": {
        "exec": "/home/bo7afes/.config/waybar-ycal/bar.py",
        "on-click": "/home/bo7afes/.config/waybar-ycal/toggle.sh",
+       "on-click-right": "/home/bo7afes/.config/waybar-ycal/toggle_date.sh",
+       "signal": 8,
        "interval": 60,
        "return-type": "json"
      },
+    "custom/prayer-times": {
+        "exec": "/home/bo7afes/.config/waybar/scripts/prayer-times.sh",
+        "interval": "once",
+        "signal": 9,
+        "return-type": "json"
+    },
 }

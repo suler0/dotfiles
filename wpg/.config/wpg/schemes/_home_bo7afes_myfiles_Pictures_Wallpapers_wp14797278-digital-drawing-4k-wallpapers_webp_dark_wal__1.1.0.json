@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/wp14797278-digital-drawing-4k-wallpapers.webp",
+    "alpha": "100",
+    "special": {
+        "background": "#060632",
+        "foreground": "#9ebbad",
+        "cursor": "#9ebbad"
+    },
+    "colors": {
+        "color0": "#060632",
+        "color1": "#5C285E",
+        "color2": "#1C5965",
+        "color3": "#645963",
+        "color4": "#9A2E66",
+        "color5": "#9F586C",
+        "color6": "#D1486C",
+        "color7": "#9ebbad",
+        "color8": "#6e8279",
+        "color9": "#5C285E",
+        "color10": "#1C5965",
+        "color11": "#645963",
+        "color12": "#9A2E66",
+        "color13": "#9F586C",
+        "color14": "#D1486C",
+        "color15": "#9ebbad"
+    }
+}

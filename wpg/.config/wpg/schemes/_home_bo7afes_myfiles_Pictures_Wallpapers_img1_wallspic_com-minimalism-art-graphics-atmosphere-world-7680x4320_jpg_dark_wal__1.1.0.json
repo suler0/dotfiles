@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/img1.wallspic.com-minimalism-art-graphics-atmosphere-world-7680x4320.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0f16",
+        "foreground": "#e1c9b2",
+        "cursor": "#e1c9b2"
+    },
+    "colors": {
+        "color0": "#0c0f16",
+        "color1": "#5A4B42",
+        "color2": "#6A5647",
+        "color3": "#7B634E",
+        "color4": "#884B3B",
+        "color5": "#966E53",
+        "color6": "#B58965",
+        "color7": "#e1c9b2",
+        "color8": "#9d8c7c",
+        "color9": "#5A4B42",
+        "color10": "#6A5647",
+        "color11": "#7B634E",
+        "color12": "#884B3B",
+        "color13": "#966E53",
+        "color14": "#B58965",
+        "color15": "#e1c9b2"
+    }
+}

@@ -1,4 +1,4 @@
--- Hyprland Lua config for bo7afes
+
 
 local terminal    = "alacritty"
 local fileManager = "Thunar"
@@ -23,12 +23,12 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("swaync")
     hl.exec_cmd("~/.config/waybar/scripts/update_workspace_icons.py")
     hl.exec_cmd("~/.config/waybar/scripts/hyprworkstyle.py")
-    hl.exec_cmd("hyprctl setcursor capitaine-cursors 24")
+    hl.exec_cmd("hyprctl setcursor Bibata-Modren-Amber 24")
 end)
 
 -- Environment variables
-hl.env("XCURSOR_THEME", "capitaine-cursors")
-hl.env("HYPRCURSOR_THEME", "capitaine-cursors")
+hl.env("XCURSOR_THEME", "Bibata-Modren-Amber")
+hl.env("HYPRCURSOR_THEME", "Bibata-Modren-Amber")
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 
@@ -37,7 +37,7 @@ hl.config({
     general = {
         gaps_in  = 2,
         gaps_out = 4,
-        border_size = 3,
+        border_size = 2,
         col = {
             active_border   = "rgba(B18F61ee)",
             inactive_border = "rgba(98602Eaa)",
@@ -48,20 +48,20 @@ hl.config({
         layout = "dwindle",
     },
     decoration = {
-        rounding       = 0,
-        rounding_power = 0,
+        rounding       = 10,
+        rounding_power = 10,
         active_opacity   = 1.0,
-        inactive_opacity = 0.8,
+        inactive_opacity = 0.95,
         shadow = {
-            enabled      = false,
-            range        = 4,
-            render_power = 3,
+            enabled      = true,
+            range        = 20,
+            render_power = 7,
             color        = 0xee1a1a1a,
         },
         blur = {
             enabled  = true,
-            size     = 3,
-            passes   = 1,
+            size     = 6,
+            passes   = 3,
             vibrancy = 0.1696,
         },
     },
@@ -173,6 +173,10 @@ hl.window_rule({
 
 -- Layer rules
 hl.layer_rule({ match = { namespace = "wlogout" }, blur = true })
+hl.layer_rule({ match = { namespace = "waybar" }, blur = true, ignore_alpha = 0.5 })
+hl.layer_rule({ match = { namespace = "swaync-notification-window" }, blur = true, ignore_alpha = 0.5 })
+hl.layer_rule({ match = { namespace = "swaync-control-center" }, blur = true, ignore_alpha = 0.3 })
+hl.layer_rule({ match = { namespace = "rofi" }, blur = true, ignore_alpha = 0.5 })
 
 -- Keybindings
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
@@ -191,23 +195,38 @@ hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 -- Wallpaper and bar
 hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd("waypaper --folder ~/myfiles/Pictures/Wallpapers"))
 hl.bind(mainMod .. " + W",         hl.dsp.exec_cmd("~/.config/waybar/reload.sh"))
-hl.bind(mainMod .. " + Z",         hl.dsp.exec_cmd("pkill -USR1 waybar"))
+hl.bind(mainMod .. " + Z",         hl.dsp.exec_cmd("~/.config/floating-clock/toggle.sh"))
 
 -- Session
 hl.bind(mainMod .. " + SHIFT + X", hl.dsp.exec_cmd("loginctl poweroff"))
 hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("systemctl reboot"))
 hl.bind(mainMod .. " +SHIFT + L", hl.dsp.exec_cmd("/home/bo7afes/.local/share/quickshell-lockscreen/lock.sh"))
 -- Screenshots
-hl.bind("Print",         hl.dsp.exec_cmd("grim ~/myfiles/Pictures/screenshot-$(date +%F-%T).png"))
-hl.bind("SHIFT + Print", hl.dsp.exec_cmd("grim -g \"$(slurp)\" ~/myfiles/Pictures/area-$(date +%F-%T).png"))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | wl-copy --type image/png"))
-
+--hl.bind("Print",         hl.dsp.exec_cmd("grim ~/myfiles/Pictures/screenshot-$(date +%F-%T).png"))
+--hl.bind("SHIFT + Print", hl.dsp.exec_cmd("grim -g \"$(slurp)\" ~/myfiles/Pictures/area-$(date +%F-%T).png"))
+--hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | wl-copy --type image/png"))
+-- Screenshots with rishot
+hl.bind("Print", hl.dsp.exec_cmd("/home/bo7afes/.local/bin/rishot monitor"))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("/home/bo7afes/.local/bin/rishot"))
 -- Focus movement
 hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + J", hl.dsp.focus({ direction = "down" }))
-
+hl.bind(mainMod .. " + V", function()
+    hl.dispatch(hl.dsp.window.float({ action = "toggle" }))
+    local w = hl.get_active_window()
+    if w ~= nil and w.floating then
+        local monitor = hl.get_active_monitor()
+        local winW, winH = 500, 500
+        hl.dispatch(hl.dsp.window.resize({ x = winW, y = winH, relative = false }))
+        hl.dispatch(hl.dsp.window.move({
+            x = math.floor((monitor.width - winW) / 2),
+            y = math.floor((monitor.height - winH) / 2),
+            relative = false
+        }))
+    end
+end)
 -- Workspaces
 for i = 1, 10 do
     local key = i % 10
@@ -253,3 +272,36 @@ hl.window_rule({
     no_focus        = true,
     no_initial_focus = true,
 })
+
+-- ========================================
+-- DYNAMIC CURSORS PLUGIN
+-- ========================================
+if hl.plugin.dynamic_cursors then
+    hl.config {
+        plugin = {
+            dynamic_cursors = {
+                enabled = true,
+                mode = "stretch",
+                stretch = { limit = 800, activation = "quadratic", window = 100 },
+                shake = { enabled = true, threshold = 6.0, base = 4.0, speed = 4.0, timeout = 2000 },
+            }
+        }
+    }
+end
+
+-- Hyprland-run windowrule
+hl.window_rule({
+    name  = "move-hyprland-run",
+    match = { class = "hyprland-run" },
+
+    move  = "20 monitor_h-120",
+    float = true,
+})
+
+local function zoom_screen(offset)
+  local current = hl.get_config("cursor.zoom_factor")
+  local new_zoom = math.max(1.0, math.min(3.0, current + offset))
+  hl.config({ cursor = { zoom_factor = new_zoom } })
+end
+hl.bind("SUPER + SHIFT + mouse_down", function() zoom_screen(0.3) end)
+hl.bind("SUPER + SHIFT + mouse_up", function() zoom_screen(-0.3) end)

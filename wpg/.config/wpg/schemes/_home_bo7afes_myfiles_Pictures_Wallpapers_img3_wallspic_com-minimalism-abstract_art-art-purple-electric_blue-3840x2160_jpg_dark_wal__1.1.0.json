@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/img3.wallspic.com-minimalism-abstract_art-art-purple-electric_blue-3840x2160.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#000000",
+        "foreground": "#df9fbb",
+        "cursor": "#df9fbb"
+    },
+    "colors": {
+        "color0": "#000000",
+        "color1": "#E44F7E",
+        "color2": "#5D3988",
+        "color3": "#663C92",
+        "color4": "#6B4198",
+        "color5": "#7145A1",
+        "color6": "#A0458A",
+        "color7": "#df9fbb",
+        "color8": "#9c6f82",
+        "color9": "#E44F7E",
+        "color10": "#5D3988",
+        "color11": "#663C92",
+        "color12": "#6B4198",
+        "color13": "#7145A1",
+        "color14": "#A0458A",
+        "color15": "#df9fbb"
+    }
+}

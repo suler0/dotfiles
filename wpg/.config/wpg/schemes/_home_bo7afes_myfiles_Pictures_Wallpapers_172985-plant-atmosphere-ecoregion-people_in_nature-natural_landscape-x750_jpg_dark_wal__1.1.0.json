@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/172985-plant-atmosphere-ecoregion-people_in_nature-natural_landscape-x750.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#13100f",
+        "foreground": "#eee6c5",
+        "cursor": "#eee6c5"
+    },
+    "colors": {
+        "color0": "#13100f",
+        "color1": "#98602E",
+        "color2": "#956F51",
+        "color3": "#877A79",
+        "color4": "#B18F61",
+        "color5": "#CDAA65",
+        "color6": "#D4B161",
+        "color7": "#eee6c5",
+        "color8": "#a6a189",
+        "color9": "#98602E",
+        "color10": "#956F51",
+        "color11": "#877A79",
+        "color12": "#B18F61",
+        "color13": "#CDAA65",
+        "color14": "#D4B161",
+        "color15": "#eee6c5"
+    }
+}

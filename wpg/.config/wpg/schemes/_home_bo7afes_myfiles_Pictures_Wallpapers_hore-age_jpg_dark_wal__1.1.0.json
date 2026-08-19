@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/hore-age.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0e16",
+        "foreground": "#e1cdb9",
+        "cursor": "#e1cdb9"
+    },
+    "colors": {
+        "color0": "#0a0e16",
+        "color1": "#A27D62",
+        "color2": "#9C846F",
+        "color3": "#AE9175",
+        "color4": "#C29E7A",
+        "color5": "#CDA67D",
+        "color6": "#C9A885",
+        "color7": "#e1cdb9",
+        "color8": "#9d8f81",
+        "color9": "#A27D62",
+        "color10": "#9C846F",
+        "color11": "#AE9175",
+        "color12": "#C29E7A",
+        "color13": "#CDA67D",
+        "color14": "#C9A885",
+        "color15": "#e1cdb9"
+    }
+}

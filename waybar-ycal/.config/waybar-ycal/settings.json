@@ -1,0 +1,17 @@
+{
+  "lang": "ar",
+  "week_start": "monday",
+  "notifications_enabled": true,
+  "timezone": "",
+  "date_format": "",
+  "time_format": "24h",
+  "font_family": "Ubuntu Arabic",
+  "font_size": 11,
+  "window_scale": 0.85,
+  "custom_languages": {},
+  "colors": {
+    "background": null,
+    "foreground": null,
+    "accent": null
+  }
+}

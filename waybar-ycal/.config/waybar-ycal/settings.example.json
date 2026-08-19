@@ -1,0 +1,13 @@
+{
+ "lang": "en",
+ "week_start": "monday",
+ "notifications_enabled": true,
+ "timezone": "",
+ "date_format": "",
+ "time_format": "24h",
+ "font_family": "",
+ "font_size": 11,
+ "window_scale": 1.0,
+ "custom_languages": {},
+ "colors": {}
+}

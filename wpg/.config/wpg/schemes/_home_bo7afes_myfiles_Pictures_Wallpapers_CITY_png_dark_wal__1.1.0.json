@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/CITY.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0f1010",
+        "foreground": "#d7c8ba",
+        "cursor": "#d7c8ba"
+    },
+    "colors": {
+        "color0": "#0f1010",
+        "color1": "#906B76",
+        "color2": "#AB6965",
+        "color3": "#D56E51",
+        "color4": "#C79962",
+        "color5": "#696982",
+        "color6": "#857280",
+        "color7": "#d7c8ba",
+        "color8": "#968c82",
+        "color9": "#906B76",
+        "color10": "#AB6965",
+        "color11": "#D56E51",
+        "color12": "#C79962",
+        "color13": "#696982",
+        "color14": "#857280",
+        "color15": "#d7c8ba"
+    }
+}

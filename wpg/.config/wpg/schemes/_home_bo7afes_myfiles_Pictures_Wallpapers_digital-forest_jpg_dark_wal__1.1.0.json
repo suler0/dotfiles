@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bo7afes/myfiles/Pictures/Wallpapers/digital-forest.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#04040B",
+        "foreground": "#eeca8e",
+        "cursor": "#eeca8e"
+    },
+    "colors": {
+        "color0": "#04040B",
+        "color1": "#6F4632",
+        "color2": "#1F2844",
+        "color3": "#2A2D42",
+        "color4": "#544C54",
+        "color5": "#9A5329",
+        "color6": "#CE6522",
+        "color7": "#eeca8e",
+        "color8": "#a68d63",
+        "color9": "#6F4632",
+        "color10": "#1F2844",
+        "color11": "#2A2D42",
+        "color12": "#544C54",
+        "color13": "#9A5329",
+        "color14": "#CE6522",
+        "color15": "#eeca8e"
+    }
+}
